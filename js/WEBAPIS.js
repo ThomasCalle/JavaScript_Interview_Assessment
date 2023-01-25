@@ -14,36 +14,26 @@ document.getElementById('start_button').onclick = function() {
   score = 0;
   time_remaining = max_time;
 }
-
-var questions = [
+var questions = [  //Assesment Q & A  🥸
   {
-    question: "API stands for Application Programming Interface? (yes/no)",
-    answer: "yes"
-
+    question: "Q1: JavaScript has a Boolean data type. It can only take the values of: true or false? … is this (true or false)",
+    answer: "true"
   },
-
   {
-    question: "Web API's were originally made as a mistake so the german creater could go walk his do? (yes/no)",
-    answer: "no"
-
+    question: "Q2: In JavaScript these are all of following conditional statements:“if”, “else”, “switch”? (true or false)",
+    answer: "false"
   },
-
   {
-    question: "Is SOAP an API? (yes/no)",
-    answer: "yes"
-
+    question: "Q3: Is SOAP an API? (true or false)",
+    answer: "true"
   },
-
   {
-    question: "XML stands for the following: eXtensible Markup Language (yes/no)",
-    answer: "yes"
-
+    question: "Q4: JavaScript is placed into the HTML element “<script>”? (true or false)",
+    answer: "true"
   },
-
   {
-    question: "API's connect with assets/databases to access required informtaion/data and send to the app? (yes/no)",
-    answer: "yes"
-
+    question: "Q5: JavaScript is a markup language? (true or false)",
+    answer: "false"
   }
 ];
 leaderboard = [];
