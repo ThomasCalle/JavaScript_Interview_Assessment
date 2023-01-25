@@ -1,0 +1,62 @@
+/* Begining of CSS document for ThomasCalleStackDeveloper - enjoy!*/
+
+html {
+    font-size: 62%;
+    scroll-behavior: smooth;
+}
+
+
+/* Card body's will contain organized  */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+/* Body: font size family used throughout the CSS*/
+body {
+    font-family:"apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif", "Verdana", "Opan Sans", "Roboto", "Source Sans Pro", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 28px;
+    line-height: 1.5;
+    color: white;
+    text-align: justify;
+    background-color: #063258;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* H1 to H6 header design and frame perfect for mobile format*/
+h1, h2, h3, h4, h5, h6 {
+
+    margin-bottom: 26px;
+    color: white;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+}
+
+
+
+/* Start: footer section styling */
+.footer .h6{
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 4.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+
+
+
+
+}
+/* End: footer section styling*/
+/* End of this CSS file, thank you for viewing - Thomas Calle */
