@@ -1,40 +1,36 @@
 /* Begining of CSS document for ThomasCalleStackDeveloper - enjoy!*/
 
 html {
-    font-size: 62%;
     scroll-behavior: smooth;
 }
 
 /* Card body's will contain organized  */
 
 * {
-
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 #start_button{
-
     margin-left: auto;
     margin-right: auto;
     display: block;
-
-} 
-
-#leaderboard {
-
+    background-color: #194a75;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 4.5rem;
     display: flex;
-    align-items: center;
+    align-content: center;
     flex-direction: column;
+    justify-content: flex-start;
     flex-wrap: wrap;
-
-}
+    cursor: pointer;
+} 
 
 /* Body: font size family used throughout the CSS*/
 body {
     font-family:"apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif", "Verdana", "Opan Sans", "Roboto", "Source Sans Pro", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 2rem;
     line-height: 1.5;
     color: white;
     text-align: justify;
@@ -45,46 +41,78 @@ body {
     justify-content: flex-start;
 }
 
-/* H1 to H6 header design and frame perfect for mobile format*/
-h1, h2, h3, h4, h5, h6 {
-
-    margin-bottom: 1rem;
-    color: white;
-    font-weight: 700;
-    line-height: 1.1;
-    text-align: center;
-    
-}
-.h5{
-
-    font-size: 2rem;
-    margin-bottom: 0.625rem;
-    color: rgb(189, 144, 106);
-    font-weight: 700;
-    line-height: 1.1;
-    text-align: center;
-}
-.h6{
-
-    font-size: 1rem;
-    margin-bottom: 0.625rem;
-    color: rgb(189, 144, 106);
-    font-weight: 700;
-    line-height: 1.1;
-    text-align: center;
-}
-
-/* Start: footer section styling */
-
-.footer {
+.container {
     background-color: #194a75;
     padding: 1rem;
     border-radius: 1rem;
+    margin-top: 4.5rem;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+.leaderboard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #194a75;
+    padding: 1rem;
+    border-radius: 1.5rem;
     margin-top: 4.5rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
 }
+
+/* H1 to H6 header design and frame perfect for mobile format*/
+h1, h2, h3, h4, h5, h6 {
+
+    color: white;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.5rem;
+}
+h4{
+    font-size: 2rem;
+}
+h5{
+    padding-block:.2rem;
+    font-size: 1.4rem;
+}
+h6{
+    font-size:.8rem;
+    padding-block:.2rem;
+    
+}
+
+/* Start: footer section styling */
+
+.footer {
+    background-color: #194a75;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 /* End: footer section styling*/
 /* End of this CSS file, thank you for viewing - Thomas Calle */

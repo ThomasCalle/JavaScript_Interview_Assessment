@@ -108,7 +108,7 @@ setInterval (function() {
     //Format leaderboard HTML
     html_leaderboard = "1) " + leaderboard[0]["Username"] + " = " + leaderboard[0]["Score"];
     for (var i = 1; i < leaderboard.length; i++) {
-      html_leaderboard += "<br>" + (i+1) + ") " + leaderboard[i]["Username"] + " = " + leaderboard[i]["Score"];
+      html_leaderboard += "<br>" + (i+1) + ") " + leaderboard[i]["Username"] + "=" + leaderboard[i]["Score"];
     }
     alert("Updating new leaderboard:\n" + html_leaderboard);
     document.getElementById('leaderboard').innerHTML = html_leaderboard;
