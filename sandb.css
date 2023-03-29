@@ -13,6 +13,20 @@ body {
     color: white;
     margin: 0;
   }
+
+  /* .question {
+    margin-bottom: 1rem;
+  }
+
+  .choices {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .choice {
+    margin-bottom: 0.5rem;
+  } */
   
   main {
     max-width: 800px;
