@@ -1,0 +1,25 @@
+/* Reset CSS */
+
+/* Remove margin and padding from all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove default styles for lists */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove default styles for links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove default font styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}

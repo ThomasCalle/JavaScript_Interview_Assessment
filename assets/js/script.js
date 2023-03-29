@@ -114,3 +114,33 @@ setInterval (function() {
     document.getElementById('leaderboard').innerHTML = html_leaderboard;
   }
 }, 100);
+
+
+
+
+
+
+
+
+function startTimer() {
+    
+    secondsLeft = timer;    
+        gameTime = setInterval(function() {
+        timeDisplay.textContent = "TIME LEFT: " + secondsLeft;
+        secondsLeft--;          
+        if (secondsLeft <= 0) {
+            clearInterval(gameTime);
+            mainTitle.hidden = false;
+            questionContent.hidden = true;
+            rightWrong.hidden = true;
+            mainTitle.textContent = "You ran out of time!";
+            answerOptions.hidden = true;
+            startButton.hidden = false;
+        };
+    }, 1000);
+    startButton.hidden = true;
+    mainTitle.hidden = true;
+    questionContent.hidden = false;  
+    answerOptions.hidden = false;
+    rightWrong.hidden = false;
+};
