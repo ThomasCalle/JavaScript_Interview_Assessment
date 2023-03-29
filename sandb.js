@@ -1,32 +1,56 @@
+
 const questions = [
-  {
-    question:
-      "Q1: JavaScript has a Boolean data type. It can only take the values of",
-    choices: ["0 and 1", "True and False", "Yes and No", "On and Off"],
-    answer: 1,
-  },
-  {
-    question:
-      "Q2: In JavaScript, these are all of the following conditional statements: “if”, “else”, “switch”?",
-    choices: ["True", "False", "Depends on the use case", "None of the above"],
-    answer: 0,
-  },
-  {
-    question: "Q3: Is SOAP an API?",
-    choices: ["Yes", "No", "Sometimes", "Depends on the context"],
-    answer: 0,
-  },
-  {
-    question: "Q4: JavaScript is placed into the HTML element “<script>”?",
-    choices: ["True", "False", "Depends on the browser", "None of the above"],
-    answer: 0,
-  },
-  {
-    question: "Q5: JavaScript is a markup language?",
-    choices: ["True", "False", "Depends on the context", "None of the above"],
-    answer: 1,
-  },
-];
+    {
+      question: 'What is the primary purpose of a Web API?',
+      choices: [
+        'A. To design web pages',
+        'B. To facilitate communication between client and server',
+        'C. To optimize search engine results',
+        'D. To secure websites from hackers',
+      ],
+      answer: 'B',
+    },
+    {
+      question: 'Which protocol is commonly used for Web APIs?',
+      choices: [
+        'A. FTP',
+        'B. SMTP',
+        'C. HTTP',
+        'D. IMAP',
+      ],
+      answer: 'C',
+    },
+    {
+      question: 'What does REST stand for in the context of Web APIs?',
+      choices: [
+        'A. Reliable Event Sourcing Technology',
+        'B. Request-Event-Source-Transfer',
+        'C. Representational State Transfer',
+        'D. Recursive Standard Transmission',
+      ],
+      answer: 'C',
+    },
+    {
+      question: 'Which of the following HTTP methods is typically used to update a resource in a RESTful API?',
+      choices: [
+        'A. GET',
+        'B. POST',
+        'C. PUT',
+        'D. DELETE',
+      ],
+      answer: 'C',
+    },
+    {
+      question: 'What data format is most commonly used for exchanging data in Web APIs?',
+      choices: [
+        'A. CSV',
+        'B. JSON',
+        'C. XML',
+        'D. HTML',
+      ],
+      answer: 'B',
+    },
+  ];  
 
 let timer = 60;
 let currentQuestionIndex = 0;

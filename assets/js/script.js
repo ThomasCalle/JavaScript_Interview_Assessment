@@ -14,7 +14,7 @@ document.getElementById('start_button').onclick = function() {
   score = 0;
   time_remaining = max_time;
 }
-var questions = [  //Assesment Q & A  🥸
+var questions = [//Assesment Q & A  🥸
   {
     question: "Q1: JavaScript has a Boolean data type. It can only take the values of: true or false? … is this (true or false)",
     answer: "true"

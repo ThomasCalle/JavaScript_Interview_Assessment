@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="">
-        <script src="" defer></script>
-        <title>Thomas' highscore</title>
-    </head>
-    <body>
-        <header>
-            <h1>Leaderboard Highscore</h1>
-            </header>
-            <main class="leaderboard" id="leaderboard">
-            <ol id="leaderboard_tracker">
-            
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas' Web API Interview Assessment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <header class="bg-info text-white py-3">
+        <div class="container">
+            <h1 class="h3">Leaderboard Highscore</h1>
+        </div>
+    </header>
+    <main class="my-4">
+        <div class="container">
+            <ol id="leaderboard_tracker" class="list-group">
             </ol>
-            </main>
-    </body>
-        <!-- Footer Section and Ending Message -->
-    <footer>
-        <section class="footer" id="footer">
-            <section class="form-footer">
-                <h5>Designed with ❤ by Thomas Calle.</h5>
-                <p>
-                <h6>&copy; 2023 All rights reserved.</h6>
-                </p>
-            </section>
-        </section>
-    <script src="/highscores.js">
-      </script>
+            <div class="mt-4">
+                <button class="btn btn-primary mr-2" onclick="window.history.back()">Go Back</button>
+                <button class="btn btn-danger" onclick="localStorage.clear(); location.reload();">Clear Highscore</button>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-light py-3">
+        <div class="container">
+            <h5>Designed with ⏳ by Thomas Calle.</h5>
+            <p><small>&copy; 2023 All rights reserved.</small></p>
+        </div>
+    </footer>
+    <script src="/highscores.js"></script>
+</body>
 </html>
-
-// <!-- End: footer section styling
-// <!-End of this CSS file, thank you for viewing - Thomas Calle -->
