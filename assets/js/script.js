@@ -71,7 +71,7 @@ const displayQuestion = () => {
 // This function handles the user's answer to the current question.
 // It updates the score and timer variables based on the answer, and displays the next question or ends the quiz if there are no more questions.
 const handleAnswer = (index) => {
-  if (index === questions[currentQuestionIndex].answer) {
+  if (questions[currentQuestionIndex].choices[index][0] === questions[currentQuestionIndex].answer) {
     score++;
   } else {
     timer -= 10;
