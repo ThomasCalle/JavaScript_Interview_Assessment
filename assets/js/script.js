@@ -1,3 +1,4 @@
+// This code initializes the array of questions, each having a question, choices, and the correct answer
 const questions = [
   {
     question: "What is the primary purpose of a Web API?",
@@ -73,6 +74,8 @@ const displayQuestion = () => {
     choicesDiv.appendChild(button);
   });
 };
+// This function handles the answer clicked by the user
+// It checks if the answer is correct or incorrect, updates the score and timer, and moves on to the next question
 const handleAnswer = (index) => {
   const isCorrect =
     questions[currentQuestionIndex].choices[index][0] ===
