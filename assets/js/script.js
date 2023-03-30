@@ -104,7 +104,7 @@ const saveScore = () => {
   highScores.sort((a, b) => b.score - a.score);
 
   localStorage.setItem("highScores", JSON.stringify(highScores));
-  window.location.assign("/highscores.html");
+  window.location.assign("./highscores.html");
 };
 // Function to start the timer countdown
 const startTimer = () => {
