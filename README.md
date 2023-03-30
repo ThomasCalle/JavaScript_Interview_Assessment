@@ -51,10 +51,10 @@ THEN I can save my initials and my score
 ```
 
 ## GIF:
-### Figure 1. GIF.
+### Figure 1. Thomas' Web APIs: Interview Assesment Quiz GIF.
 
 #### The following animation demonstrates the application functionality:
-![](./Public/assets/images/)
+![](./assets/Images/WebAPI_.GIF)
 
 ## Usage Instructions:
 1. Navigate to the deployed URL to access the timed coding quiz application.
@@ -74,9 +74,9 @@ THEN I can save my initials and my score
 ## YouTube Walkthrough Video:
 [Coming Soon...]()
 
-## Screenshots:
-### Figure 1. Screenshot.
-![](/Public/assets/images/) 
+## Screenshot:
+### Figure 1. Thomas' Web APIs: Interview Assesment Quiz Screenshot.
+![](/assets/Images/WebAPI_Screenshot.png) 
 
 ## Installation Process:
 
