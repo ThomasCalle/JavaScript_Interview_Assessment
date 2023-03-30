@@ -1,10 +1,10 @@
-# Thomas' JavaScript Interview Assessment
+# Thomas' Web APIs: Interview Assesment Quiz
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-JavaScript Interview Assessment
+Thomas' Web APIs: Interview Assesment Quiz
 
 The purpose of the module named "JavaScript Interview Assessment" is to asses fellow Full Stack Developers or to challenge newly focused JavaScript users by taking a 'Moderate' level interview assesment - in order to gauge the usesrs comprehension, applied knowledge and preperatory studies to fulfil real-world interview challenges. The prupose is have this app run in the browser, feature dynamically updated HTML and CSS powered by JavaScript code. The quiz has clean and minimal layout with a responsive user interface and provides the 'true or false' questions followed by a 'Leaderboard' prompt to submit the users achieved score - the score will be presented on the main page once logged.
 
@@ -24,7 +24,9 @@ The purpose of the module named "JavaScript Interview Assessment" is to asses fe
 
 ## The Challenge:
 
-This module Challenge involves building a timed coding quiz named "JavaScript Interview Assessment" and it will have multiple-choice questions. The prupose is have this app run in the browser, feature dynamically updated HTML and CSS powered by JavaScript code. The quiz has clean and minimal layout with a responsive user interface.
+In this fourth module, our task was to create a minimal yet effective timed coding quiz. The quiz will consist of multiple-choice questions and will run in the browser. Using JavaScript, we had to dynamically update the HTML and CSS to create a clean and responsive user interface.
+
+This challenge aims to assess the users understanding of Web APIs in preparation for coding assessment you may encounter during interviews.
 
 ## Assigned User Story:
 ```
@@ -55,20 +57,22 @@ THEN I can save my initials and my score
 ![](./Public/assets/images/)
 
 ## Usage Instructions:
-
-1. 
-2. 
-3. 
-4. 
+1. Navigate to the deployed URL to access the timed coding quiz application.
+2. Click the "Start" button to begin the quiz and initiate the timer.
+3. Answer multiple-choice questions related to JavaScript Web API fundamentals as quickly and accurately as possible.
+4. Keep in mind that answering a question incorrectly will result in a time penalty of 10 seconds.
+5. Complete all questions or wait until the timer reaches 0 to finish the quiz.
+6. Once the quiz is over, enter your initials and save your score to compare with other users.
+7. You may retake the quiz as many times as you'd like to improve your score or challenge your friends.
 
 ## Deployed Application Link:
-[Deployed Application Link:](https://github.com/ThomasCalle/JavaScript_Interview_Assessment)
+[Deployed Application Link:](https://thomascalle.github.io/JavaScript_Interview_Assessment/)
 
 ## GitHub Repository:
 [GitHub Repository:](https://github.com/ThomasCalle/JavaScript_Interview_Assessment)
 
 ## YouTube Walkthrough Video:
-[Click Here to Watch](https://github.com/ThomasCalle/JavaScript_Interview_Assessment)
+[Coming Soon...]()
 
 ## Screenshots:
 ### Figure 1. Screenshot.
@@ -80,56 +84,13 @@ THEN I can save my initials and my score
 2. Open the cloned (or downloaded) repository in any source code editor.
 3. Open the integrated terminal of the document and complete the respective installation guides provided in "Built With" to ensure the cloned documentation will operate.
 
-## Built With:
+## Built with:
 - Saiyan Pride
-- JSON: [JSON](https://www.npmjs.com/package/json)
+- HTML5 & CSS3
 - Dynamic JavaScript
-- Mongoose: [7.0.3](https://www.npmjs.com/package/mongoose)
-- Express: [4.18.2](https://www.npmjs.com/package/express)
-- Node.js: [16.18.1](https://nodejs.org/en/blog/release/v16.18.1/)
-- Insomnia: [by Kong](https://insomnia.rest/)
-- MongoDB: [Website](https://www.mongodb.com/)
-- Nodemon: [2.0.12](https://www.npmjs.com/package/nodemon/v/2.0.12)
+- Images, sourced locally, images/photos created by the author
 - License Badge: [Shields.io](https://shields.io/)
 - Visual Studio Code: [Website](https://code.visualstudio.com/)
-### Built with
-
-- Semantic HTML5 markup
-- Functional JavaScript on a 'applied and 'moderate' creation difficulty
-- CSS custom properties minimal desiqn
-- Mobile-first workflow and accesability
-- Comments - clear indicators and point reference marks
-- Images, sourced locally, images/photos created by the author (Thomas Calle)
-- Additiional resource links provided.
-
-## What I Learned:
-1. 
-2. 
-3. 
-
-## My process
-
-
-I initialized and configured a GitHub repository to maintain version control for this project. The project utilizes GitHub pages to easily publish this project for other to view. 
-
-Once complete, brainstorm a presentable 'coding quiz' game layout which includes: title, difficulty level header, local leader board stored on page with the abiility to input the users score once the game has been compelted, click button to intiate game, styled design footer trade marking the creater: Thomas Calle(ME)
-
-Once brainstormed, generalize all navigational tools to the following assets nessacary - ensure suitable loads and presented items are provided. Ideally the quiz is to function in a drop down menu which presents the timer.
-
-The process has been my first true implimentation of JavaScript including the following inputed functions; variables, prompts, tracking, record keeping, loops and formated HTML combined together. The application is functional when deployed, accessibility screen resizing from desktop to mobile format, with a responsive layout that adapts to the various viewports... creates an ease of access and overall pollished and minimal user base experience, as it demostrates easy flow and optimizes efficient user experience.
-
-Initially my creations always start with an HTML backbone... proceeeded to the styles adding header footers with soft minimal designs and flex boxes. The Java script provided the main functionality once the layout and design was done more thoughtout testing and finalization was made for the quiz game such as quiz clock, questions, intials and score etc.
-----
-
-### Built with
-
-- Semantic HTML5 markup
-- Functional JavaScript on a 'applied and 'moderate' creation difficulty
-- CSS custom properties minimal desiqn
-- Mobile-first workflow and accesability
-- Comments - clear indicators and point reference marks
-- Images, sourced locally, images/photos created by the author (Thomas Calle)
-- Additiional resource links provided.
 
 ### What I learned
 
@@ -142,16 +103,17 @@ Experience milestone: use of JavaScript for the first time every especially amon
 Understanding the critical requirements necessary to develop a quiz game and other mock-ups will always be my focus in order to satisfy requested work from colleaguess, clients, and employers a like. 
 
 
-### Continued development
+### Continued Development: 
+
+Original Submission.
 
 Throughout my journey, will evaluate my JavaScript experience among theory and practice to better my efficency - to take it up a notch, to push the envelope, and of course to further my pursuit of happiness.
 
-### Continued Development:
-1. Intellect, Discipline & Strength
-2. 
-3. 
-4. 
-5. 
+Highly Advanced Resubmission.
+
+1. Implementing different difficulty levels.
+2. Adding more questions to the quiz.
+3. Allowing users to choose between different programming languages.
 
 
 ## License & Copyright ©
@@ -179,13 +141,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-## Acknowledgments
-Thank you, for reveiwing my first use and implemenation of JavaScript among a published project. Apprecaite those who particiapte among my great journey on any form or level, until next time - Adios.
-
 ## Author
 
 Follow me on Github at [ThomasCalle](https://github.com/ThomasCalle)! Additional questions or concerns? feel free to contact me at thomas.calle@outlook.com.
 
-Until next, adios!
-
 © 2023 [ThomasCalle](https://github.com/ThomasCalle). Confidential and Proprietary. All Rights Reserved.
+
+## Acknowledgments
+Thank you, for reveiwing my first use and implemenation of JavaScript among a published project. Apprecaite those who have particiapted among my great journey - until next time, Adios!
