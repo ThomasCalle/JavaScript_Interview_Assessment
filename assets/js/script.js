@@ -1,4 +1,3 @@
-// Define quiz questions, choices, and answers
 const questions = [
   {
     question: "What is the primary purpose of a Web API?",
@@ -43,14 +42,20 @@ let timer = 60;
 let currentQuestionIndex = 0;
 let score = 0;
 let timerInterval;
+let feedback = "";
+let updateTimer = true;
 // This function starts the quiz by hiding the intro container and displaying the question container.
 // It also resets the timer and displays the first question.
 const startQuiz = () => {
+	feedback = "";
+  updateTimer = true;
   document.querySelector(".intro-container").hidden = true;
   document.querySelector(".question-container").hidden = false;
   timer = 60;
   startTimer();
+  printTimer();
   displayQuestion();
+  displayFeedback();
 };
 // This function displays the current question and its answer choices.
 // It also adds a click event listener to each answer choice button.
@@ -60,11 +65,6 @@ const displayQuestion = () => {
   const choicesDiv = document.getElementById("choices");
   choicesDiv.innerHTML = "";
 
-// Add a div for displaying feedback under the choices div
-const feedbackDiv = document.createElement("div");
-feedbackDiv.id = "feedback";
-choicesDiv.appendChild(feedbackDiv);
-
   // loop through each answer choice in the current question object and create a button element for each one
   currentQuestion.choices.forEach((choice, index) => {
     const button = document.createElement("button");
@@ -73,34 +73,20 @@ choicesDiv.appendChild(feedbackDiv);
     choicesDiv.appendChild(button);
   });
 };
-
-// This function handles the user's answer to the current question.
-// It updates the score and timer variables based on the answer, and displays the next question or ends the quiz if there are no more questions.
-const showAnswerFeedback = (isCorrect) => {
-  const feedbackDiv = document.createElement("div");
-  feedbackDiv.className = "answer-feedback";
-  feedbackDiv.innerText = isCorrect ? "Correct!" : "Incorrect!";
-
-  document.body.appendChild(feedbackDiv);
-
-  setTimeout(() => {
-    document.body.removeChild(feedbackDiv);
-  }, 1000);
-};
-
 const handleAnswer = (index) => {
   const isCorrect =
     questions[currentQuestionIndex].choices[index][0] ===
     questions[currentQuestionIndex].answer;
-
   if (isCorrect) {
     score++;
+    feedback = "You are correct!";
   } else {
     timer -= 10;
+  	feedback = "Oops, wrong answer!";
+    if (timer < 0) {
+    	timer = 0;
+    }
   }
-
-  showAnswerFeedback(isCorrect); // Call the function here
-
   // move on to the next question
   currentQuestionIndex++;
 
@@ -113,10 +99,12 @@ const handleAnswer = (index) => {
 };
 // This function ends the quiz by stopping the timer, hiding the question container, and displaying the final score container.
 const endQuiz = () => {
+	updateTimer = false;
   clearInterval(timerInterval);
   document.querySelector(".question-container").hidden = true;
   document.querySelector(".final-score-container").hidden = false;
   document.getElementById("final-score").innerText = score;
+  displayFeedback();
 };
 // This function saves the user's score and initials to local storage.
 const saveScore = () => {
@@ -136,12 +124,13 @@ const startTimer = () => {
   const timerDiv = document.getElementById("timer");
 
   const countdown = () => {
-    timer--; // decrement the timer by 1 second
-    timerDiv.innerText = `Time left: ${timer}`;
+  	if (timer > 0 && updateTimer == true) {
+    	timer--; // decrement the timer by 1 second
+    }
     // if the timer reaches 0 or less
     if (timer <= 0) {
       // stop the timer countdown
-      clearInterval(timerInterval);
+      clearInterval(countdown);
       // end the quiz
       endQuiz();
     }
@@ -149,6 +138,28 @@ const startTimer = () => {
 
   timerInterval = setInterval(countdown, 1000);
 };
+
+const printTimer = () => {
+  const timerDiv = document.getElementById("timer");
+  const countdown = () => {
+  	timerDiv.innerText = `Time left: ${timer}`;
+  };
+
+  timerInterval = setInterval(countdown, 1);
+}; 
+
+// Function to update Q/A feedback
+const displayFeedback = () => {
+  const feedbackDiv = document.getElementById("feedback");
+  const feedbackEndDiv = document.getElementById("feedback-end");
+  const countdown2 = () => {
+    feedbackDiv.innerText = feedback;
+    feedbackEndDiv.innerText = feedback;
+  };
+
+  timerInterval = setInterval(countdown2, 1);
+};
+
 // Event listeners for starting the quiz and submitting the score
 document.getElementById("start-quiz").addEventListener("click", startQuiz);
-document.getElementById("submit-score").addEventListener("click", saveScore);
+document.getElementById("submit-score").addEventListener("click", saveScore); 

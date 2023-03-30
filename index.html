@@ -19,19 +19,21 @@
   </section>
     <main>
       <div class="intro-container">
-        <p>Test your Web APIs: skills in this timed quiz!</p>
+        <p class="fs-3">Test your Web API skills in this 60-second multiple choice quiz. Remember, incorrect answers will deduct 10 seconds from the timer. Goodluck, friend.</p>
         <button id="start-quiz">Start Quiz</button>
       </div>
       <div class="question-container" hidden>
         <h2 id="question"></h2>
+        <ol id="choices" class="list-group">
+        </ol>
         <div id="feedback" class="feedback text-center"></div>
-        <div id="choices"></div>
       </div>
       <div class="final-score-container" hidden>
         <h2>Your Score: <span id="final-score"></span></h2>
         <p>Enter your initials:</p>
         <input type="text" id="initials" maxlength="2" />
         <button id="submit-score">Submit</button>
+        <div id="feedback-end"></div>
       </div>
     </main>
     <footer>
