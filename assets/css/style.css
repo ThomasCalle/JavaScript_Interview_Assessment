@@ -31,6 +31,21 @@ main {
   text-align: center;
   flex-grow: 1;
 }
+.answer-feedback {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(208, 21, 21);
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+#feedback {
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+}
 
 button {
   background-color: #4CAF50;

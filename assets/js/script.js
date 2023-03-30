@@ -59,6 +59,12 @@ const displayQuestion = () => {
   document.getElementById("question").innerText = currentQuestion.question;
   const choicesDiv = document.getElementById("choices");
   choicesDiv.innerHTML = "";
+
+// Add a div for displaying feedback under the choices div
+const feedbackDiv = document.createElement("div");
+feedbackDiv.id = "feedback";
+choicesDiv.appendChild(feedbackDiv);
+
   // loop through each answer choice in the current question object and create a button element for each one
   currentQuestion.choices.forEach((choice, index) => {
     const button = document.createElement("button");
@@ -70,12 +76,31 @@ const displayQuestion = () => {
 
 // This function handles the user's answer to the current question.
 // It updates the score and timer variables based on the answer, and displays the next question or ends the quiz if there are no more questions.
+const showAnswerFeedback = (isCorrect) => {
+  const feedbackDiv = document.createElement("div");
+  feedbackDiv.className = "answer-feedback";
+  feedbackDiv.innerText = isCorrect ? "Correct!" : "Incorrect!";
+
+  document.body.appendChild(feedbackDiv);
+
+  setTimeout(() => {
+    document.body.removeChild(feedbackDiv);
+  }, 1000);
+};
+
 const handleAnswer = (index) => {
-  if (questions[currentQuestionIndex].choices[index][0] === questions[currentQuestionIndex].answer) {
+  const isCorrect =
+    questions[currentQuestionIndex].choices[index][0] ===
+    questions[currentQuestionIndex].answer;
+
+  if (isCorrect) {
     score++;
   } else {
     timer -= 10;
   }
+
+  showAnswerFeedback(isCorrect); // Call the function here
+
   // move on to the next question
   currentQuestionIndex++;
 
